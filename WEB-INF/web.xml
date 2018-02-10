@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>NewMoscow</display-name>
+    <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+
+    <context-param>
+            <param-name>adminPlanet</param-name>
+            <param-value>Earth</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>DiceRoll</servlet-name>
+        <servlet-class>servlets.DiceRollServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DiceRoll</servlet-name>
+        <url-pattern>/Lottery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+            <servlet-name>GetPetPresent</servlet-name>
+            <servlet-class>com.example.web.PetSelect</servlet-class>
+
+            <init-param>
+                    <param-name>adminEmail</param-name>
+                    <param-value>likewecare@gmail.com</param-value>
+            </init-param>
+    </servlet>
+
+    <servlet-mapping>
+            <servlet-name>GetPetPresent</servlet-name>
+            <url-pattern>/SelectPet.do</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+            <servlet-name>GetFile</servlet-name>
+            <servlet-class>com.example.web.FileReturn</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+            <servlet-name>GetFile</servlet-name>
+            <url-pattern>/ReturnFile.do</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+            <servlet-name>SecretLink</servlet-name>
+            <servlet-class>com.example.web.SecretLink</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+            <servlet-name>SecretLink</servlet-name>
+            <url-pattern>/SecretLink.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>

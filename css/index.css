@@ -1,0 +1,66 @@
+
+        :root  {
+               --nav-color: #9068be;
+               --head-color: #9de1df; /*#fae596; */
+
+               --nav-text-color: #ffff66;
+               --head-text-color:   #595959;/*#4d4d4d;*/
+        }
+
+        .navbar-inverse  {
+            background: var(--nav-color);
+            border: var(--nav-color);
+
+            margin-bottom:0;
+        }
+
+        .navbar a  {
+                color: var(--nav-text-color) !important;
+                font-weight: bold;
+                font-family: Verdana;
+                background: var(--navbar-color) !important;
+        }
+
+    .navbar a:hover  {
+            background: #3385ff !important;
+    }
+
+        .jumbotron  {
+            background-color: var(--head-color);
+            color: var(--head-text-color);
+            text-align: center;
+
+            font-family: Verdana;
+
+
+            margin-bottom: 0;
+        }
+
+
+
+        .zero  {
+                background-color: #fae596; /*#b1e7e5; /*#9de1df;  /*#6ed3cf*/
+                text-align: center;
+        }
+
+        .first  {
+                background-color: #e1e8f0;
+
+        }
+
+        .second  {
+                background-color: #f2efe8;
+
+        }
+
+        .third {
+                background-color:#e1e8f0;
+
+        }
+
+        .row{
+            overflow: hidden;
+        }
+
+
+
