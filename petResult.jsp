@@ -26,9 +26,13 @@
                                 out.println("<h2>Other pet info:</h2>");
 
                                 out.println("<br/><b>Alignment:</b> " + request.getAttribute("alignment"));
-                                out.println("<br/><b>Other features:</b> " + parameters[0] + ", " + parameters[1]);
-                                out.println("<br/><b>Profession:</b> "+parameters[2]);
 
+                                out.println("<br/><b>Other features:</b> " );
+                                for (int i=0; i<parameters.length; i++)  {
+                                        out.println(parameters[i] + ", ");
+                                }
+
+                                out.println("<br/><b>Profession:</b> "+parameters[parameters.length-1]);
 
                                 out.println("<br/><br/><br/><br/><br/>");
                                 out.println("<a href=\"form.html\">GO BACK TO FORM</a>");
