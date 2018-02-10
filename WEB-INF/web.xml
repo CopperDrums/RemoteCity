@@ -66,4 +66,14 @@
             <url-pattern>/SecretLink.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Starter</servlet-name>
+        <servlet-class>com.example.web.Starter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Starter</servlet-name>
+        <url-pattern>/Starter.do</url-pattern>
+    </servlet-mapping>
+
 </web-app>
